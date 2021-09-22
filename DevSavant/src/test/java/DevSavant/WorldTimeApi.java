@@ -11,7 +11,7 @@ public class WorldTimeApi {
     public void validate_status_code_200_timezone_endpoint() {
 
         String endpoint = "http://worldtimeapi.org/api/timezone";
-        var response = given().when().when().get(endpoint).then()
+        var response = given().when().get(endpoint).then()
                 .assertThat()
                 .statusCode(200)
                 .header("Content-Type", equalTo("application/json; charset=utf-8"))
@@ -33,7 +33,7 @@ public class WorldTimeApi {
                 body("datetime", notNullValue()).
                 body("timezone", equalTo("America/Bogota"));
 
-        response.log().all();
+        response.log().body();
 
 
     }
@@ -44,7 +44,7 @@ public class WorldTimeApi {
         String endpoint = "http://worldtimeapi.org/api/timezone/Bogota";
         var response = given().when().when().get(endpoint).then().assertThat().statusCode(404);
 
-        response.log().all();
+        response.log().body();
 
 
     }
