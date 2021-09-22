@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DevSavant/DevSavant.iml" filepath="$PROJECT_DIR$/DevSavant/DevSavant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DevSavent.iml" filepath="$PROJECT_DIR$/.idea/DevSavent.iml" />
+    </modules>
+  </component>
+</project>
